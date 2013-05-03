@@ -1,0 +1,13 @@
+{
+  "name": "code4milano",
+  "version": "0.0.0",
+  "dependencies": {
+    "sass-bootstrap": "~2.3.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.9.1",
+    "backbone": "~1.0.0",
+    "backbone.marionette": "~1.0.2",
+    "lodash": "~1.2.1"
+  },
+  "devDependencies": {}
+}
