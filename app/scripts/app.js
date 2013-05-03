@@ -1,4 +1,6 @@
-Backbone.Marionette.TemplateCache.prototype.compileTemplate = Handlebars.compile;
+Backbone.Marionette.TemplateCache.prototype.compileTemplate = function(rawTemplate) {
+  return Handlebars.compile(rawTemplate);
+};
 
 app = window.app = new Backbone.Marionette.Application;
 
@@ -15,7 +17,6 @@ app.addRegions({
 });
 
 app.addInitializer(function() {
-  console.log('app initializer');
   app.startSubApp('router');
 });
 

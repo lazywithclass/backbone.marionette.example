@@ -19,11 +19,22 @@
 
   <div id="mainRegion"></div>
 
+  <!-- build:js scripts/main.js -->
+  <script src="components/jquery/jquery.js"></script>
+  <script src="components/lodash/lodash.js"></script>
+  <script src="components/handlebars.js/handlebars.js"></script>
+  <script src="components/backbone/backbone.js"></script>
+  <script src="components/backbone.marionette/lib/backbone.marionette.js"></script>
+  <!-- endbuild -->
+
+  <script src="scripts/helpers.js"></script>
+
   <script id="firstTemplate" type="text/x-handlebars-template">
     <div class="container">
       <div class="hero-unit">
         <a href="#second">goto second</a>
         <h2>Hey there!<br /> First view here!</h2>
+        <small>{{date}}</small>
       </div>
     </div>
   </script>
@@ -36,17 +47,10 @@
     </div>
   </script>
 
-  <!-- build:js scripts/main.js -->
-  <script src="components/jquery/jquery.js"></script>
-  <script src="components/lodash/lodash.js"></script>
-  <script src="components/handlebars.js/handlebars.js"></script>
-  <script src="components/backbone/backbone.js"></script>
-  <script src="components/backbone.marionette/lib/backbone.marionette.js"></script>
   <script src="scripts/app.js"></script>
   <script src="scripts/first.js"></script>
   <script src="scripts/second.js"></script>
   <script src="scripts/router.js"></script>
-  <!-- endbuild -->
 
   <!-- build:js scripts/plugins.js -->
   <script src="components/sass-bootstrap/js/bootstrap-affix.js"></script>
