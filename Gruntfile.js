@@ -70,7 +70,8 @@ module.exports = function (grunt) {
                             mountFolder(connect, '.tmp'),
                             mountFolder(connect, 'test')
                         ];
-                    }
+                    },
+                    port: 9001
                 }
             },
             dist: {
@@ -116,7 +117,7 @@ module.exports = function (grunt) {
             all: {
                 options: {
                     run: true,
-                    urls: ['http://localhost:<%= connect.options.port %>/index.html']
+                    urls: ['http://localhost:<%= connect.test.options.port %>/index.html']
                 }
             }
         },
