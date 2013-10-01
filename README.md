@@ -1,5 +1,7 @@
 # A Backbone Marionette example project
 
+## Notice: this is known to crash with bleeding edge node versions (0.11 at least), works on 0.8 though.
+
 One could use this as a starting point for further development.
 The following are used: 
 * [Backbone](http://backbonejs.org/)
